@@ -31,8 +31,8 @@ we can add a dive class with property display: flex;
 
 ![image](https://user-images.githubusercontent.com/79159894/186621491-c75996a3-e10f-40a8-9678-63375b4bc51c.png)
 ![image](https://user-images.githubusercontent.com/79159894/186621592-6964578b-c586-4b00-a8f5-bcbba62384c6.png)
+![personalb3](https://user-images.githubusercontent.com/79159894/186623305-1f1065cc-6431-47fd-a4eb-6d3f0d78fcfd.png)
 
-![personalb2](https://user-images.githubusercontent.com/79159894/186622504-75229f46-deae-44c7-bd90-ca8d9c2fce39.png)
 
 About the picture on the card
 the path of the picure need to add upper path, otherwise the picture would not show.
