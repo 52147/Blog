@@ -162,19 +162,19 @@ At the project file
 
 
 ## Update the heroku app
-If we modify the code we need to update the heroku, and the process be lik
+- If we modify the code we need to update the heroku, and the process be lik
 1. git add * 
 2. git commit -m "update"
 3. git push heroku
 4. done update
 
 
-And because I add the my blog proget in the github respositary
-So i need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
+- And because I add the my blog proget in the github respositary
+- So i need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
 so I need to
 - 1.git fetch orign
 - 2.git merge origin main
 - 3.git push
-otherwise it will appear error said fail to push some refer to https://github.com/52147/<repository name>/git.
+- otherwise it will appear error said fail to push some refer to https://github.com/52147/<repository name>/git.
 ![image](https://user-images.githubusercontent.com/79159894/186609145-fdb72c7c-95f3-47e6-b013-0122edfaf214.png)
 
