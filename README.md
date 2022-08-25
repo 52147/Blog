@@ -24,8 +24,13 @@ such as this read more button has the url link to compose page
 ![image](https://user-images.githubusercontent.com/79159894/186620252-00c816fe-053a-492d-a723-ec2b72050b16.png)
 
 ![image](https://user-images.githubusercontent.com/79159894/186619893-c0c9d5ed-c44c-45e6-91ac-c73d92aea439.png)
-but it need to add in the first position of the a tag
+but it need to add in the first position of the a tag.
 
+And if we want 2 button order horizontally
+we can add a dive class with property display: flex;
+
+![image](https://user-images.githubusercontent.com/79159894/186621491-c75996a3-e10f-40a8-9678-63375b4bc51c.png)
+![image](https://user-images.githubusercontent.com/79159894/186621592-6964578b-c586-4b00-a8f5-bcbba62384c6.png)
 
 
 ## Connect with MongoDB and Heroku
@@ -45,7 +50,9 @@ But I am confused mongo shall and mongsoh isn't they are the same thing? And the
 So the solution of this problem is 
 1. downolad the mongosh from mongodb web
 2. move the mongosh to mongodb bin file
-3. enter the connection string : 27017
+![image](https://user-images.githubusercontent.com/79159894/186622201-d71bef18-020e-4741-a87a-e807547ed4c9.png)
+
+4. enter the connection string : 27017
 
 ![image](https://user-images.githubusercontent.com/79159894/186603301-b1ae124f-1552-476d-8ecf-5f1a065e7424.png)
 3. Then use the same command in the blog file
