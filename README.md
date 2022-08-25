@@ -7,7 +7,7 @@
 
 ## node js 
 ### 1. template
-template(every node.js project needed it)
+template(every node.js project need it)
 ```
 const express = require("express");
 const bodyParser = require("body-parser");
