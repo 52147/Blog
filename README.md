@@ -5,6 +5,9 @@
 - This is a personal blog project developed by node.js, ejs and connected with mongodb and deployed at Heroku.
 - It implement the function add article, delete article and store the article in the mongodb.
 
+![image](https://user-images.githubusercontent.com/79159894/186642083-30917e39-5c12-4428-ac4b-0845605b4147.png)
+
+
 ## node js 
 ### 1. template
 template(every node.js project need it)
