@@ -122,8 +122,8 @@ but it need to add in the first position of the a tag.
 go to the project file and 
 mongo "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --username 123
 
-- but it appear error that say mongo shall has been superseded by mongosh.
-- But I am confused mongo shall and mongsoh isn't they are the same thing? And the solution told me that they are not same thing and mogo will be replace by mongosh.
+- but now it appear error that say mongo shall has been superseded by mongosh.
+- But I am confused mongo shall and mongsoh isn't they are the same thing? And the solution told me that they are not the same thing and mogo will be replace by mongosh.
 
 - ![mongodb](https://user-images.githubusercontent.com/79159894/186591806-7477a78b-e051-4de3-a521-45cd9b9b91d5.png)
 
