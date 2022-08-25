@@ -9,8 +9,10 @@ the footer will move to right and left side has lots of white space
 so the class can not have the margin-left and margin-right
 
 One tips i found out is if we want a space between the two class
-we can add one calss that has property like margin top: 5 % and we can reuse this div class in lots of place.
-such as give some white space between 2 col
+we can add one calss that has property like padding-top: 20px or margin top: 5 % and we can reuse this div class in lots of place.
+such as give some white space between 2 col so add div class b that padding-top: 20px 
+![image](https://user-images.githubusercontent.com/79159894/186613316-b35a4b5b-e4c5-4abd-8c27-389b7142cb8a.png)
+
 ![personalb2](https://user-images.githubusercontent.com/79159894/186612811-918ce150-6ea4-4e9d-b99d-1d43f0fba9b8.png)
 
 
