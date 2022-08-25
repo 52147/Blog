@@ -1,5 +1,54 @@
 # Personal Blog Web
 
+## node js 
+template
+'''
+const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
+const mongoose = require('mongoose');
+
+// for render ejs page
+const homeStartingContent = "";
+const aboutContent = "";
+const contactContent = "";
+
+const app = express();
+
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(express.static("public"));
+
+// connect with mongoose MongoDB
+mongoose.connect("mongodb+srv://123:123@cluster0.jnxzx3s.mongodb.net/blogDB", {
+  useNewUrlParser: true
+});
+
+
+const postSchema = {
+  title: String,
+  content: String
+};
+
+const Post = mongoose.model("Post", postSchema);
+
+// add some get, post request here
+
+
+
+
+// list on local host 3000(website) for connection
+app.listen(process.env.PORT || 3000, function () {
+
+  console.log("Server started on port 3000");
+
+});
+'''
+## EJS
+
 https://serene-everglades-37897.herokuapp.com/
 ## CSS
 The css frame work is the part I most like because use bootstrap it's so easy to get the beautiful layout.
