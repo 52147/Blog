@@ -48,7 +48,6 @@ At the project file
 
 13. git push heroku master
 14. Then web been deploy on the heroku app
-![image](https://user-images.githubusercontent.com/79159894/186606690-68c91ee9-d4ed-47fc-a65d-e033ba42649a.png)
 ![image](https://user-images.githubusercontent.com/79159894/186608379-7f59922a-c86f-4cd5-b776-44081e3c54cf.png)
 
 
@@ -59,4 +58,5 @@ If we modify the code we need to update the heroku, and the process be lik
 3. git push heroku
 4. done update
 
+![image](https://user-images.githubusercontent.com/79159894/186608727-aef4de1b-039e-4122-8197-c093470848ce.png)
 
