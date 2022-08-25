@@ -78,9 +78,9 @@ app.listen(process.env.PORT || 3000, function () {
 - Building the css framework is the part I most like because use bootstrap it's so easy to get the beautiful layout.
 ### 1. footer position
 - One problem is that because the footer position is absoulte
-- so if I make the class card has the margin-left and margin-right
+- so if I make the class card has the margin-left:10% and margin-right:10%
 - the footer will move to right and left side has lots of white space
-- so the class can not have the margin-left and margin-right
+- so the class can not have the margin-left and margin-right if the footer position is absoulte
 ### 2. div class to add white space
 - One tip I found out is if we want a space between the two class
 - We can add one class that has property like padding-top: 20px or margin top: 5 % and we can reuse this div class in lots of place.
