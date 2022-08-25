@@ -59,12 +59,12 @@ app.listen(process.env.PORT || 3000, function () {
 ### 2. functions
 - This project has function below
 1. (get request)render home page(root page)
-2. (get request)render aboutn page
+2. (get request)render about page
 3. (get request)render contact page
 4. (get request)render compose page
 5. (get request)render every differnt post by use their id
 6. (post request)save the post in the compose page and render back to the home page
-7. (post request)delet the post in the compse page and redirect back to home page
+7. (post request)delete the post in the compose page and redirect back to home page
 8. (listen request)call back function from the port 3000 to check connection is successfully
 
 ## EJS
