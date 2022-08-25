@@ -3,7 +3,7 @@
 https://serene-everglades-37897.herokuapp.com/
 
 
-Conclusion
+## Connect with MongoDB and Heroku
 
 This project took me 72 hours no sleep to complete. The part of ejs code and css just took one day and last 2 day all spend on connect with mongoDB and heroku.
 I build a full stack project before, name to-do list web, so I know how to connect to mongodb.
@@ -49,4 +49,14 @@ At the project file
 13. git push heroku master
 14. Then web been deploy on the heroku app
 ![image](https://user-images.githubusercontent.com/79159894/186606690-68c91ee9-d4ed-47fc-a65d-e033ba42649a.png)
+![image](https://user-images.githubusercontent.com/79159894/186608379-7f59922a-c86f-4cd5-b776-44081e3c54cf.png)
+
+
+## Update the heroku app
+If we modify the code we need to update the heroku, and the process be lik
+1. git add * 
+2. git commit -m "update"
+3. git push heroku
+4. done update
+
 
