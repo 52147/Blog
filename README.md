@@ -81,7 +81,7 @@ app.listen(process.env.PORT || 3000, function () {
 - so if I make the class card has the margin-left:10% and margin-right:10%
 - the footer will move to right and left side has lots of white space
 - so the class can not have the margin-left and margin-right if the footer position is absoulte
-### 2. div class to add white space
+### 2. <div></div> div tag to add white space
 - One tip I found out is if we want a space between the two class
 - We can add one class that has property like padding-top: 20px or margin top: 5 % and we can reuse this div class in lots of place.
 - such as give some white space between 2 col so add div class b that padding-top: 20px 
@@ -92,7 +92,7 @@ app.listen(process.env.PORT || 3000, function () {
 - And about the font awesome, first my font awesome is like the square can not appear correctly.
 - But after I update the import link from font awesome, it appear right.
 - ![image](https://user-images.githubusercontent.com/79159894/186619302-ef7c7e2f-2839-4281-b5dd-48c7dcfeebca.png)
-### 4. a tag can be button
+### 4. <a></a> a tag can be button
 - And the i tag is for the url link but we can use as a button we link by using the boostrap btn class.
 - such as this read more button has the url link to compose page
 - ![image](https://user-images.githubusercontent.com/79159894/186620252-00c816fe-053a-492d-a723-ec2b72050b16.png)
