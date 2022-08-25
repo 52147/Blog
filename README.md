@@ -15,6 +15,18 @@ such as give some white space between 2 col so add div class b that padding-top:
 
 ![personalb2](https://user-images.githubusercontent.com/79159894/186612811-918ce150-6ea4-4e9d-b99d-1d43f0fba9b8.png)
 
+And aboutn the font awesome, first my font awesome is like the square can not appear correctly.
+But after I update the import link from font awesome, it appear right.
+![image](https://user-images.githubusercontent.com/79159894/186619302-ef7c7e2f-2839-4281-b5dd-48c7dcfeebca.png)
+
+And the i tag is for the url link but we can use as a button we link by using the boostrap btn class.
+such as this read more button has the url link to compose page
+![image](https://user-images.githubusercontent.com/79159894/186620252-00c816fe-053a-492d-a723-ec2b72050b16.png)
+
+![image](https://user-images.githubusercontent.com/79159894/186619893-c0c9d5ed-c44c-45e6-91ac-c73d92aea439.png)
+but it need to add in the first position of the a tag
+
+
 
 ## Connect with MongoDB and Heroku
 
