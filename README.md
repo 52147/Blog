@@ -1,7 +1,12 @@
 # Personal Blog Web
+## Description
+
+https://serene-everglades-37897.herokuapp.com/
+This is a personal blog project developed by node.js, ejs and connected with mongodb and deployed at Heroku.
+It implement the function add article, delete article and store the article in the mongodb.
 
 ## node js 
-template
+template(every node.js project needed it)
 ```
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -60,7 +65,6 @@ This project has function below
 
 ## EJS
 
-https://serene-everglades-37897.herokuapp.com/
 ## CSS
 The css frame work is the part I most like because use bootstrap it's so easy to get the beautiful layout.
 One problem is because the footer position is absoulte
