@@ -172,9 +172,9 @@ At the project file
 - And because I add the my blog proget in the github respositary
 - So i need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
 so I need to
-- 1.git fetch orign
-- 2.git merge origin main
-- 3.git push
+1. git fetch orign
+2. git merge origin main
+3. git push
 - otherwise it will appear error said fail to push some refer to https://github.com/52147/<repository name>/git.
 ![image](https://user-images.githubusercontent.com/79159894/186609145-fdb72c7c-95f3-47e6-b013-0122edfaf214.png)
 
