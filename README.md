@@ -2,7 +2,7 @@
 
 ## node js 
 template
-'''
+```
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -46,7 +46,8 @@ app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on port 3000");
 
 });
-'''
+```
+
 ## EJS
 
 https://serene-everglades-37897.herokuapp.com/
