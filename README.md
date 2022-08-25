@@ -32,6 +32,8 @@ we can add a dive class with property display: flex;
 ![image](https://user-images.githubusercontent.com/79159894/186621491-c75996a3-e10f-40a8-9678-63375b4bc51c.png)
 ![image](https://user-images.githubusercontent.com/79159894/186621592-6964578b-c586-4b00-a8f5-bcbba62384c6.png)
 
+![personalb2](https://user-images.githubusercontent.com/79159894/186622504-75229f46-deae-44c7-bd90-ca8d9c2fce39.png)
+
 
 ## Connect with MongoDB and Heroku
 
