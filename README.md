@@ -58,12 +58,12 @@ If we modify the code we need to update the heroku, and the process be lik
 3. git push heroku
 4. done update
 
-![image](https://user-images.githubusercontent.com/79159894/186608727-aef4de1b-039e-4122-8197-c093470848ce.png)
 
 And because I add the my blog proget in the github respositary
 So i need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
 so I need to
 git fetch orign
 git merge origin main
+otherwise it will appear error said fail to push some refer to https://github.com/52147/<repository name>/git.
 ![image](https://user-images.githubusercontent.com/79159894/186609145-fdb72c7c-95f3-47e6-b013-0122edfaf214.png)
 
