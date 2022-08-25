@@ -34,6 +34,10 @@ we can add a dive class with property display: flex;
 
 ![personalb2](https://user-images.githubusercontent.com/79159894/186622504-75229f46-deae-44c7-bd90-ca8d9c2fce39.png)
 
+About the picture on the card
+the path of the picure need to add upper path, otherwise the picture would not show.
+And the picture file need to at the same file(public) with css.
+![image](https://user-images.githubusercontent.com/79159894/186622914-2c65edd5-811f-4a1f-8b1d-4fed9ed9d74b.png)
 
 ## Connect with MongoDB and Heroku
 
