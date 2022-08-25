@@ -1,6 +1,17 @@
 # Personal Blog Web
 
 https://serene-everglades-37897.herokuapp.com/
+## CSS
+The css frame work is the part I most like because use bootstrap it's so easy to get the beautiful layout.
+One problem is because the footer position is absoulte
+so if I make the class card has the margin-left and margin-right
+the footer will move to right and left side has lots of white space
+so the class can not have the margin-left and margin-right
+
+One tips i found out is if we want a space between the two class
+we can add one calss that has property like margin top: 5 % and we can reuse this div class in lots of place.
+such as give some white space between 2 col
+![personalb2](https://user-images.githubusercontent.com/79159894/186612811-918ce150-6ea4-4e9d-b99d-1d43f0fba9b8.png)
 
 
 ## Connect with MongoDB and Heroku
@@ -19,7 +30,8 @@ But I am confused mongo shall and mongsoh isn't they are the same thing? And the
 
 So the solution of this problem is 
 1. downolad the mongosh from mongodb web
-2. enter the connection string : 27017
+2. move the mongosh to mongodb bin file
+3. enter the connection string : 27017
 
 ![image](https://user-images.githubusercontent.com/79159894/186603301-b1ae124f-1552-476d-8ecf-5f1a065e7424.png)
 3. Then use the same command in the blog file
