@@ -67,29 +67,30 @@ This project has function below
 
 ## CSS
 The css frame work is the part I most like because use bootstrap it's so easy to get the beautiful layout.
+### footer position
 One problem is because the footer position is absoulte
 so if I make the class card has the margin-left and margin-right
 the footer will move to right and left side has lots of white space
 so the class can not have the margin-left and margin-right
-
+### div class to add white space
 One tips i found out is if we want a space between the two class
 we can add one calss that has property like padding-top: 20px or margin top: 5 % and we can reuse this div class in lots of place.
 such as give some white space between 2 col so add div class b that padding-top: 20px 
 ![image](https://user-images.githubusercontent.com/79159894/186613316-b35a4b5b-e4c5-4abd-8c27-389b7142cb8a.png)
 
 ![personalb2](https://user-images.githubusercontent.com/79159894/186612811-918ce150-6ea4-4e9d-b99d-1d43f0fba9b8.png)
-
+## font awesome link update
 And aboutn the font awesome, first my font awesome is like the square can not appear correctly.
 But after I update the import link from font awesome, it appear right.
 ![image](https://user-images.githubusercontent.com/79159894/186619302-ef7c7e2f-2839-4281-b5dd-48c7dcfeebca.png)
-
+## i tag can be button
 And the i tag is for the url link but we can use as a button we link by using the boostrap btn class.
 such as this read more button has the url link to compose page
 ![image](https://user-images.githubusercontent.com/79159894/186620252-00c816fe-053a-492d-a723-ec2b72050b16.png)
 
 ![image](https://user-images.githubusercontent.com/79159894/186619893-c0c9d5ed-c44c-45e6-91ac-c73d92aea439.png)
 but it need to add in the first position of the a tag.
-
+## button display horizontally
 And if we want 2 button order horizontally
 we can add a dive class with property display: flex;
 
@@ -97,7 +98,7 @@ we can add a dive class with property display: flex;
 ![image](https://user-images.githubusercontent.com/79159894/186621592-6964578b-c586-4b00-a8f5-bcbba62384c6.png)
 ![personalb3](https://user-images.githubusercontent.com/79159894/186623305-1f1065cc-6431-47fd-a4eb-6d3f0d78fcfd.png)
 
-
+## picture path
 About the picture on the card
 the path of the picure need to add upper path, otherwise the picture would not show.
 And the picture file need to at the same file(public) with css.
