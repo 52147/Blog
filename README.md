@@ -1,7 +1,7 @@
 # Personal Blog Web
 ## Description
 
-- https://serene-everglades-37897.herokuapp.com/
+- Project link: https://serene-everglades-37897.herokuapp.com/
 - This is a personal blog project developed by node.js, ejs and connected with mongodb and deployed at Heroku.
 - It implement the function add article, delete article and store the article in the mongodb.
 
