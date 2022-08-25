@@ -88,7 +88,7 @@ app.listen(process.env.PORT || 3000, function () {
 - ![image](https://user-images.githubusercontent.com/79159894/186613316-b35a4b5b-e4c5-4abd-8c27-389b7142cb8a.png)
 
 - ![personalb2](https://user-images.githubusercontent.com/79159894/186612811-918ce150-6ea4-4e9d-b99d-1d43f0fba9b8.png)
-### 3. font awesome link update
+### 3. font awesome import link update
 - And about the font awesome, first my font awesome is like the square can not appear correctly.
 - But after I update the import link from font awesome, it appear right.
 - ![image](https://user-images.githubusercontent.com/79159894/186619302-ef7c7e2f-2839-4281-b5dd-48c7dcfeebca.png)
