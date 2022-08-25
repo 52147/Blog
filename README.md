@@ -69,6 +69,7 @@ Use ejs to decrease the same html code
 we use at header and footer because they are the same in every page
 In ejs, we need to add <%= xxx %> for javascript code
 and <%- include("partials/header"); -%> to include the same page
+![image](https://user-images.githubusercontent.com/79159894/186638697-ca83cae9-f10c-4ca0-a6e7-1eba5dd24421.png)
 
 ## CSS
 The css frame work is the part I most like because use bootstrap it's so easy to get the beautiful layout.
