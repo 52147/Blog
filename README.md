@@ -92,7 +92,7 @@ app.listen(process.env.PORT || 3000, function () {
 - And about the font awesome, first my font awesome is like the square can not appear correctly.
 - But after I update the import link from font awesome, it appear right.
 - ![image](https://user-images.githubusercontent.com/79159894/186619302-ef7c7e2f-2839-4281-b5dd-48c7dcfeebca.png)
-### 4. i tag can be button
+### 4. a tag can be button
 - And the i tag is for the url link but we can use as a button we link by using the boostrap btn class.
 - such as this read more button has the url link to compose page
 - ![image](https://user-images.githubusercontent.com/79159894/186620252-00c816fe-053a-492d-a723-ec2b72050b16.png)
@@ -123,7 +123,7 @@ go to the project file and
 mongo "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --username 123
 
 - but now it appear error that say mongo shall has been superseded by mongosh.
-- But I am confused mongo shall and mongsoh isn't they are the same thing? And the solution told me that they are not the same thing and mogo will be replace by mongosh.
+- But I am confused mongo shall and mongsoh isn't they are the same thing? And the solution told me that they are not the same thing and mogo will be replaced by mongosh.
 
 - ![mongodb](https://user-images.githubusercontent.com/79159894/186591806-7477a78b-e051-4de3-a521-45cd9b9b91d5.png)
 
@@ -160,20 +160,20 @@ mongosh "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --use
 - ![image](https://user-images.githubusercontent.com/79159894/186606276-4996f1d3-a9b1-4717-bd4a-1b85e5c562ba.png)
 
 13. git push heroku master
-14. Then web been deploy on the heroku app
+14. Then web be deployed on the heroku app
 - ![image](https://user-images.githubusercontent.com/79159894/186608379-7f59922a-c86f-4cd5-b776-44081e3c54cf.png)
 
 
 ## Update the heroku app
-- If we modify the code we need to update the heroku, and the process be like
+- If we modify the code, we need to update the heroku, and the process be like
 1. git add * 
 2. git commit -m "update"
 3. git push heroku
 4. done update
 
 
-- And because I add the my blog proget in the github respositary
-- So i need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
+- And because I add my blog progect in the github respositary
+- So I need to update the repositary, but I encounter some probelem that first I push the project to master but now I want project been push to main
 - so I need to
 1. git fetch orign
 2. git merge origin main
