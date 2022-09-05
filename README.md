@@ -9,7 +9,7 @@
 
 
 ## node js 
-### 1. template
+### Template
 - template(every node.js project need it)
 ```
 const express = require("express");
