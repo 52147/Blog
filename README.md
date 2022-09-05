@@ -56,7 +56,9 @@ app.listen(process.env.PORT || 3000, function () {
 
 });
 ```
-### 2. functions
+
+## RESTful API
+
 - This project has function below
 1. (get request)render home page(root page)
 2. (get request)render about page
