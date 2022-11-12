@@ -8,10 +8,10 @@
 ![image](https://user-images.githubusercontent.com/79159894/186642083-30917e39-5c12-4428-ac4b-0845605b4147.png)
 
 
-## node js 
+## Node.js
 ### Template
-- template(every node.js project need it)
-```
+- template(every node.js project need it to connect to database)
+```javascript
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -117,18 +117,18 @@ but it need to add in the first position of the a tag.
 
 ## Connect with MongoDB and Heroku
 
-- This project took me 72 hours no sleep to complete. The part of node.js code and css just took one day and last 2 day all spend on connect with mongoDB and heroku.
-- I built a full stack project before, named to-do list web, so I think I know how to connect to mongodb.
+### Error
 - I did this before and it connect with mongodb successfully:
-
 go to the project file and 
+```
 mongo "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --username 123
-
-- but now it appear error that say mongo shall has been superseded by mongosh.
-- But I am confused mongo shall and mongsoh isn't they are the same thing? And the solution told me that they are not the same thing and mogo will be replaced by mongosh.
+```
+- but now it appear error that say mongo shell has been superseded by mongosh.
+- But I am confused mongo shall and mongsoh isn't they are the same thing? 
+- And the solution told me that they are not the same thing and mogo will be replaced by mongosh.
 
 - ![mongodb](https://user-images.githubusercontent.com/79159894/186591806-7477a78b-e051-4de3-a521-45cd9b9b91d5.png)
-
+### Solution
 - So the solution of this problem is 
 1. downolad the mongosh from mongodb web
 2. move the mongosh to mongodb bin file
@@ -142,7 +142,7 @@ mongo "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --usern
 mongosh "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --username 123
 
 - Then we can successfully connected with mongodb!
-
+## Depoly node.js project at Internet used Heroku
 
 - After that, we can start connect with heroku application to let the website release at the internet.
 - At the project file
