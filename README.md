@@ -118,12 +118,11 @@ but it need to add in the first position of the a tag.
 ## Connect with MongoDB and Heroku
 
 ### Error
-- I did this before and it connect with mongodb successfully:
-go to the project file and 
+go to the project file and run
 ```
 mongo "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --username 123
 ```
-- but now it appear error that say mongo shell has been superseded by mongosh.
+- It show error that say mongo shell has been superseded by mongosh.
 - But I am confused mongo shall and mongsoh isn't they are the same thing? 
 - And the solution told me that they are not the same thing and mogo will be replaced by mongosh.
 
