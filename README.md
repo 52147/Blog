@@ -1,7 +1,8 @@
 # Personal Blog Web
 ## Description
 
-- Project link: https://serene-everglades-37897.herokuapp.com/
+Update 2022/12/24: Heroku stopped offering a free tier since November, so I changed to deploying my app using [cyclic](https://www.cyclic.sh/).
+- Project link: https://strange-pink-zebra.cyclic.app/
 - This is a personal blog project developed by node.js, ejs and connected with mongodb and deployed at Heroku to run applications entirely in the cloud.
 - It implement the function add article, delete article and store the article in the mongodb.
 
