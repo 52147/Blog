@@ -1,8 +1,11 @@
+// file: app.js
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
 const { Post } = require('./post');
+const { PostRepository } = require('./postRepository');
 
 const homeStartingContent = "";
 const aboutContent = "";
@@ -22,73 +25,75 @@ mongoose.connect("mongodb+srv://123:123@cluster0.jnxzx3s.mongodb.net/blogDB", {
   useNewUrlParser: true
 });
 
-app.get("/", function (req, res) {
-  Post.find({}, function (err, result) {
-    if (!err) {
-      if (result) {
-        res.render("home", {
-          homeStartContent: homeStartingContent,
-          blogPosts: result
-        });
-      } else {
-        res.render("home", {
-          homeStartContent: homeStartingContent
-        });
-      }
-    }
-  });
+// Initialize post repository
+const postRepository = new PostRepository();
 
+// Initialize post service with post repository dependency injected
+const postService = new Post(postRepository);
+
+app.get("/", async function (req, res) {
+  const blogPosts = await postService.getAllPosts();
+  res.render("home", {
+    homeStartContent: homeStartingContent,
+    blogPosts: blogPosts
+  });
 });
 
-app.get("/compose", function (req, res) {
+app.get("/compose", function
+(req, res) {
   res.render("compose");
-});
-
-app.post("/compose", function (req, res) {
+  });
+  
+  app.post("/compose", async function (req, res) {
   const post = {
-    title: req.body.postTitle,
-    body: req.body.postBody
+  title: req.body.postTitle,
+  body: req.body.postBody
   }; //retrieve post content
-  const postToDB = new Post({
-    title: post.title,
-    content: post.body
+  
+  const postData = {
+  title: post.title,
+  content: post.body
+  };
+  
+  const newPost = await postService.createPost(postData);
+  
+  res.redirect("/");
   });
-  postToDB.save().then(res.redirect("/")); //go back to the home page)
-});
-
-app.get("/posts/:postID", function (req, res) {
-  const postId = req.params.postID;
-
-  Post.findById(postId, function (err, result) {
-    res.render("post", {
-      singlePostTitle: result.title,
-      singlePostBody: result.content
-    });
+  
+  app.get("/posts/:postId", async function (req, res) {
+  const postId = req.params.postId;
+  
+  const post = await postService.getPostById(postId);
+  
+  if (!post) {
+  res.status(404).send('Post not found!');
+  }
+  
+  res.render("post", {
+  singlePostTitle: post.title,
+  singlePostBody: post.content
   });
-});
-
-app.get("/about", function (req, res) {
+  });
+  
+  app.get("/about", function (req, res) {
   res.render("about", {
-    aboutContent: aboutContent
+  aboutContent: aboutContent
   });
-});
-
-app.get("/contact", function (req, res) {
+  });
+  
+  app.get("/contact", function (req, res) {
   res.render("contact", {
-    contactContent: contactContent
+  contactContent: contactContent
   });
-});
-
-app.post("/delete", function (req, res) {
-  const deletePost = req.body.deletePost;
-  Post.findOneAndRemove({
-    title: deletePost
-  }).then(res.redirect("/"));
-});
-
-// list on local host 3000(website) for connection
-app.listen(process.env.PORT || 3000, function () {
-
+  });
+  
+  app.post("/delete", async function (req, res) {
+  const postId = req.body.deletePost;
+  await postService.deletePost(postId);
+  res.redirect("/");
+  });
+  
+  // list on local host 3000(website) for connection
+  app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on port 3000");
-
-});
+  });
