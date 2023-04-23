@@ -1,9 +1,8 @@
-//jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
+const { Post } = require('./post');
 
 const homeStartingContent = "";
 const aboutContent = "";
@@ -22,16 +21,6 @@ app.use(express.static("public"));
 mongoose.connect("mongodb+srv://123:123@cluster0.jnxzx3s.mongodb.net/blogDB", {
   useNewUrlParser: true
 });
-// mongoose.connect("mongodb://localhost:27017/blogDB", {
-//   useNewUrlParser: true
-// });
-
-const postSchema = {
-  title: String,
-  content: String
-};
-
-const Post = mongoose.model("Post", postSchema);
 
 app.get("/", function (req, res) {
   Post.find({}, function (err, result) {
@@ -96,9 +85,6 @@ app.post("/delete", function (req, res) {
     title: deletePost
   }).then(res.redirect("/"));
 });
-
-
-
 
 // list on local host 3000(website) for connection
 app.listen(process.env.PORT || 3000, function () {
