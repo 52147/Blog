@@ -1,5 +1,3 @@
-// file: postRepository.js
-
 const mongoose = require('mongoose');
 const { Post } = require('./post');
 

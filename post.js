@@ -1,5 +1,3 @@
-// file: post.js
-
 const mongoose = require('mongoose');
 
 class Post {
