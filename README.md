@@ -183,3 +183,23 @@ mongosh "mongodb+srv://cluster0.jnxzx3s.mongodb.net/blogDB" --apiVersion 1 --use
 - otherwise it will appear error said fail to push some refer to https://github.com/52147/<repository name>/git.
 ![image](https://user-images.githubusercontent.com/79159894/186609145-fdb72c7c-95f3-47e6-b013-0122edfaf214.png)
 
+## 問題
+### 問題1 : 循環依賴(circular dependencies)
+
+```
+2023-04-23 19:48:26.047: (node:45) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+(node:45) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+(node:45) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
+2023-04-23 19:48:26.047: Server started on port 3000
+2023-04-23 19:48:54.380: [ERROR] Process timed out after 30 seconds.  
+```  
+當多個module以循環的方式相互依賴時，node.js程式中就會出現循環依賴。這會導致module加載和執行順序出現問題。    
+  
+解決方式：   
+使用依賴注入，將module的依賴做為參數，傳遞給module的構造函數或函數。這樣module間不會互相依賴，而是依賴於傳遞給他們的依賴。    
+  
+  
+首先，創建一個PostRepository，負責處理數據庫交互，與一個Post類，負責業務邏輯並使用PostRepository進行數據庫交互。     
+PostRepository是獨立於Post，所以可以在創建PostRepository的實例時，將其注入到Post中。這樣可以不直接依賴PostRepository而使用PostRepository。   
