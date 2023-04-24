@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 class Post {
   constructor(postRepository) {
@@ -17,11 +17,12 @@ class Post {
     return await this.postRepository.getById(postId);
   }
 
-  async deletePost(postId) {
-    return await this.postRepository.delete(postId);
+  async deletePost(postTitle) {
+    return await this.postRepository.deleteByTitle(postTitle);
   }
+  
 }
 
 module.exports = {
-  Post
+  Post,
 };

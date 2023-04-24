@@ -1,71 +1,80 @@
 <%- include("partials/header"); -%>
 
-<h1 class="text-3xl font-bold text-center my-8 custom-gray-color">Home</h1>
-<div class="a"></div>
+  <h1 class="text-3xl font-bold text-center my-8 custom-gray-color">Home</h1>
+  <div class="a"></div>
 
 
-<p> <%= homeStartContent %> </p>
-<div class="card text-center">
-  <%# loop through the posts DB and display the results %>
-  <% blogPosts.forEach(function(post){ %>
-  <div class="card-header">
-    <h2><%= post.title %></h2>
+  <p>
+    <%= homeStartContent %>
+  </p>
+  <div class="card text-center">
+    <%# loop through the posts DB and display the results %>
+      <% blogPosts.forEach(function(post){ %>
+        <div class="card-header">
+          <h2>
+            <%= post.title %>
+          </h2>
+        </div>
+        <div class="card-body text-secondary">
+          <% if (post.content.length < 101) { %>
+            <p>
+              <%= post.content.slice(0, post.content.length - 1) + " ..." %>
+                <div class="a"></div><a class="btn btn-outline-secondary" href="/posts/<%= post._id %>"> Read More
+                </a>
+            </p>
+            <% } else { %>
+              <p>
+                <%= post.content.slice(0, 100) + " ..." %>
+                  <div class="a"></div><a class="btn btn-outline-secondary" href="/posts/<%= post._id %>" role="button">
+                    Read More
+                  </a>
+              </p>
+              <% } %>
+                <!-- <div class="a"></div> -->
+        </div>
+        <% }); %>
+
   </div>
-  <div class="card-body text-secondary">
-    <% if (post.content.length < 101) { %>
-    <p> <%= post.content.slice(0, post.content.length - 1) + " ..." %> <div class="a"></div><a
-        class="btn btn-outline-secondary" href="/posts/<%= post._id %>"> Read More
-      </a>
-    </p>
-    <% } else { %>
-    <p> <%= post.content.slice(0, 100) + " ..." %><div class="a"></div><a class="btn btn-outline-secondary"
-        href="/posts/<%= post._id %>" role="button">
-        Read More
-      </a> </p>
-    <% } %>
-    <!-- <div class="a"></div> -->
-  </div>
-  <% }); %>
 
-</div>
-
-<div class="c a">
-  <div class="card-deck">
-    <div class="card">
-      <img src="pic/2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Hello Everyone!</h5>
-        <p class="card-text">This is ShouTzu Han personal bog website, this web can add article in and store it because
-          it developed by node.js and mongodb.</p>
+  <div class="c a">
+    <div class="card-deck">
+      <div class="card">
+        <img src="pic/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hello Everyone!</h5>
+          <p class="card-text">This is ShouTzu Han personal bog website, this web can add article in and store it
+            because
+            it developed by node.js and mongodb.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+      <div class="card">
+        <img src="pic/4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Looking for full-time sde position</h5>
+          <p class="card-text">I will graduate in May 2023, looking for full-time sde, full-stack and backed position.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic/5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Introduction of myself</h5>
+          <p class="card-text">I have 2 years of java programming experience and I built lots of java and javascript
+            project(you can found at the about sectin).</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <img src="pic/4.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Looking for full-time sde position</h5>
-        <p class="card-text">I will graduate in May 2023, looking for full-time sde, full-stack and backed position.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="pic/5.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Introduction of myself</h5>
-        <p class="card-text">I have 2 years of java programming experience and I built lots of java and javascript
-          project(you can found at the about sectin).</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
   </div>
-</div>
 
-<div class="d"></div>
+  <div class="d"></div>
 
-<%- include("partials/footer"); -%>
+  <%- include("partials/footer"); -%>

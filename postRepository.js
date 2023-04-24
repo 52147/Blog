@@ -1,11 +1,10 @@
-const mongoose = require('mongoose');
-const { Post } = require('./post');
+const mongoose = require("mongoose");
 
 class PostRepository {
   constructor() {
-    this.PostModel = mongoose.model('Post', {
+    this.PostModel = mongoose.model("Post", {
       title: String,
-      content: String
+      content: String,
     });
   }
 
@@ -25,8 +24,12 @@ class PostRepository {
   async delete(postId) {
     return await this.PostModel.findByIdAndDelete(postId);
   }
+  async deleteByTitle(postTitle) {
+    return await this.PostModel.findOneAndDelete({ title: postTitle });
+  }
 }
 
+
 module.exports = {
-  PostRepository
+  PostRepository,
 };
